@@ -22,9 +22,11 @@ async function dta () {
 
     // for gravatar....
     let img = (data.avatar_url);
-
+    
+    // rendering on front end....
     username.textContent = name;
     gravatar.src = img;
+    gravatar.alt = inputVal;
 
 
     // debug statements....
