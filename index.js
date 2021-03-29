@@ -1,4 +1,4 @@
-const username = document.getElementById("username");
+const username = document.getElementById("name");
 const gravatar = document.getElementById("gravatar");
 
 // on click function....
@@ -20,6 +20,11 @@ async function dta () {
     // for location ....
     let loc = (data.location);
 
+    // for gravatar....
+    let img = (data.avatar_url);
+
+    username.textContent = name;
+    gravatar.src = img;
 
 
     // debug statements....
