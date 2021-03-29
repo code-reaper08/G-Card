@@ -24,7 +24,14 @@ async function dta () {
     let img = (data.avatar_url);
     
     // rendering on front end....
-    username.textContent = name;
+
+    // to check for null fields....
+    if (name == null) {
+        username.textContent = "OOPS not found .."
+    }
+    else {
+        username.textContent = name;
+    }
     gravatar.src = img;
     gravatar.alt = inputVal;
 
