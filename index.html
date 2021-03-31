@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GithubAPI</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <h1 id="bname">GITHUB API</h1>
-
-    <input type="text" name="" id="text">
-    <button onclick="dta()" id="submit"><lord-icon
-        src="https://cdn.lordicon.com//xgeyogar.json"
-        trigger="hover"
-        colors="primary:#9cf4df,secondary:#9cf4df"
-        stroke="92"
-        style="width:40px;height:40px;text-align: center;">
-    </lord-icon></button>
-
+    <div id="inpdiv">
+      <input type="text" name="" id="text" />
+      <button onclick="dta()" id="submit">
+        <lord-icon
+          src="https://cdn.lordicon.com//xgeyogar.json"
+          trigger="hover"
+          colors="primary:#9cf4df,secondary:#9cf4df"
+          stroke="92"
+          style="width: 40px; height: 40px; text-align: center"
+        >
+        </lord-icon>
+      </button>
+    </div>
     <!-- main div for download -->
     <div id="maindiv">
-
+      <div id="gravatardiv">
         <!-- profile picture -->
-        <img id="gravatar" src="" alt="">
-        <!-- name -->
-        <div id="name"></div>
-        <!-- location -->
-        <div id="location"></div>
-
-
+        <img id="gravatar" src="" alt="" />
+      </div>
+      <!-- name -->
+      <div id="name"></div>
+      <!-- location -->
+      <div id="location"></div>
     </div>
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.1.0/screenfull.min.js"></script>
     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
     <script src="index.js"></script>
-    
-</body>
-
+  </body>
 </html>
