@@ -4,12 +4,6 @@ const locdisp = document.getElementById("location");
 
 const element = document.getElementById("maindiv");
 
-// document.getElementById('submit').addEventListener('click', () => {
-// 	if (screenfull.isEnabled) {
-// 		screenfull.request(element);
-//         screenfull.request(element, {navigationUI: 'hide'});
-// 	}
-// });
 
 // on click function....
 async function dta() {
@@ -19,10 +13,6 @@ async function dta() {
     element.style.display = "block";
   } else {
     element.style.display = "none";
-  }
-  if (screenfull.isEnabled) {
-    screenfull.request(element);
-    screenfull.request(element, { navigationUI: "hide" });
   }
   // if (element.style.display === "none") {
   //     element.style.display = "block";
@@ -63,10 +53,4 @@ async function dta() {
   // debug statements....
   console.log(name, loc);
   // alert(inputVal);
-}
-
-if (screenfull.isEnabled) {
-  screenfull.on("change", () => {
-    console.log("SCreen detected");
-  });
 }
