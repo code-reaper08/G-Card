@@ -5,6 +5,10 @@ const biodiv = document.getElementById("bio");
 const numrepo = document.getElementById("numrepo");
 const gists = document.getElementById("gists");
 const orgsdiv = document.getElementById("orgs");
+const orgtitle = document.getElementById("orgtitle");
+
+// Create elements....
+const hr = document.createElement("hr");
 
 const element = document.getElementById("maindiv");
 
@@ -54,16 +58,20 @@ async function dta() {
   let orginfo = data.organizations_url;
   const orgdata1 = await fetch(orginfo);
   const orgdata = await orgdata1.json();
-  // console.log(orgdata);
-  orgdata.forEach((i) => {
-    const orgname = i.login;
-    const orgavatar = i.avatar_url;
-    console.log(orgname);
-    let orgimg = document.createElement("img");
-    orgimg.src = orgavatar;
-    orgimg.className = "orimg";
-    orgsdiv.appendChild(orgimg);
-  });
+  console.log(orgdata);
+  if (orgdata.length != 0) {
+    orgdata.forEach((i) => {
+      const orgname = i.login;
+      const orgavatar = i.avatar_url;
+      console.log(orgname);
+      let orgimg = document.createElement("img");
+      orgimg.src = orgavatar;
+      orgimg.className = "orimg";
+      orgsdiv.appendChild(orgimg);
+      orgtitle.textContent = "Organisations";
+      orgtitle.appendChild(hr);
+    });
+  }
   // rendering on front end....
 
   // to check for null fields....

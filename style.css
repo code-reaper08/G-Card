@@ -171,8 +171,26 @@ body {
   }
 }
 .orimg {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  border-radius: 50px;
+  padding-left: 5px;
+}
+.orimg:hover {
   width: 50px;
   height: 50px;
   display: inline;
-  border-radius: 5px;
+  border-radius: 50px;
+  padding-left: 5px;
+  transition: ease 0.8s;
+}
+#orgs {
+  margin-top: 3px;
+}
+#orgtitle {
+  font-size: medium;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
 }
