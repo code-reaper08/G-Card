@@ -13,7 +13,7 @@
     <!-- nav starting -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">GitHub-CARD</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +36,6 @@
       </div>
     </nav>
     <!-- nav ending -->
-    <!-- <h1 id="bname">GITHUB API</h1> -->
     <div id="inpdiv">
       <input type="text" name="" id="text" />
       <button onclick="dta()" id="submit">
@@ -52,18 +51,69 @@
     </div>
     <!-- main div for download -->
     <div id="maindiv">
-      <div id="gravatardiv">
-        <!-- profile picture -->
-        <img id="gravatar" src="" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm"> <!--column 1-->
+            <div id="gravatardiv">
+              <!-- profile picture -->
+              <img id="gravatar" src="" alt="" />
+            </div>
+            <div id="nameloc">
+            <!-- name -->
+            <div id="name"></div>
+            <!-- location -->
+            <div id="location"></div>
+          </div>
+          <div id="orgs" class="container">
+          </div>
+          </div>
+          <div class="col-sm"> <!--column 2-->
+          <!-- bio div -->
+          <div id="bio"></div>
+          <!-- progress bar -->
+          <section class="charts_orb">
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div id="numrepo" class="orb_value count"></div>
+            </div>
+            <div class="orb_label">
+              public repos
+            </div>
+          </article>
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div id="gists" class="orb_value count">306</div>
+            </div>
+            <div class="orb_label">
+              public gists
+            </div>
+          </article>
+        </section>
+          </div>
+          <div class="col-sm"> <!--column 3-->
+            <div class="container">
+              <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+              </div>
+          </div>
+        </div>
       </div>
-      <div id="nameloc">
-      <!-- name -->
-      <div id="name"></div>
-      <!-- location -->
-      <div id="location"></div>
     </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="counter.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.1.0/screenfull.min.js"></script>
     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
     <script src="index.js"></script>

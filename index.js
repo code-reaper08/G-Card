@@ -1,6 +1,9 @@
 const username = document.getElementById("name");
 const gravatar = document.getElementById("gravatar");
 const locdisp = document.getElementById("location");
+const biodiv = document.getElementById("bio");
+const numrepo = document.getElementById("numrepo");
+const gists = document.getElementById("gists");
 
 const element = document.getElementById("maindiv");
 
@@ -29,15 +32,33 @@ async function dta() {
   const data = await res.json();
   //console.log(data);
 
-  // for name ....
+  // for name....
   let name = data.name;
 
-  // for location ....
+  // for location....
   let loc = data.location;
 
   // for gravatar....
   let img = data.avatar_url;
 
+  // for bio....
+  let bio = data.bio;
+
+  // for public repos....
+  let prepo = data.public_repos;
+
+  // for gists count....
+  let pgists = data.public_gists;
+
+  // for organistation info....
+  let orginfo = data.organizations_url;
+  const orgdata1 = await fetch(orginfo);
+  const orgdata = await orgdata1.json();
+  // console.log(orgdata);
+  orgdata.forEach(i => {
+    const orgname = i.login;
+    console.log(orgname);
+  });
   // rendering on front end....
 
   // to check for null fields....
@@ -49,6 +70,9 @@ async function dta() {
   gravatar.src = img;
   gravatar.alt = inputVal;
   locdisp.textContent = loc;
+  biodiv.textContent = bio;
+  numrepo.textContent = prepo;
+  gists.textContent = pgists;
 
   // debug statements....
   console.log(name, loc);
