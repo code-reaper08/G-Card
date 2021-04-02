@@ -4,6 +4,7 @@ const locdisp = document.getElementById("location");
 const biodiv = document.getElementById("bio");
 const numrepo = document.getElementById("numrepo");
 const gists = document.getElementById("gists");
+const orgsdiv = document.getElementById("orgs");
 
 const element = document.getElementById("maindiv");
 
@@ -57,7 +58,12 @@ async function dta() {
   // console.log(orgdata);
   orgdata.forEach(i => {
     const orgname = i.login;
+    const orgavatar = i.avatar_url;
     console.log(orgname);
+    let orgimg = document.createElement("img");
+    orgimg.src = orgavatar;
+    orgimg.className = "orimg";
+    orgsdiv.appendChild(orgimg);
   });
   // rendering on front end....
 
@@ -78,3 +84,11 @@ async function dta() {
   console.log(name, loc);
   // alert(inputVal);
 }
+var img = $("img");
+  var used = {};
+  console.dir($(img[0]).attr("src"));
+  img.each(function() {
+    var src = $(this).attr('src');
+    if(used[src]) $(this).remove();
+    used[src]=1;
+  });
