@@ -8,7 +8,6 @@ const orgsdiv = document.getElementById("orgs");
 
 const element = document.getElementById("maindiv");
 
-
 // on click function....
 async function dta() {
   let inputVal = document.getElementById("text").value;
@@ -56,7 +55,7 @@ async function dta() {
   const orgdata1 = await fetch(orginfo);
   const orgdata = await orgdata1.json();
   // console.log(orgdata);
-  orgdata.forEach(i => {
+  orgdata.forEach((i) => {
     const orgname = i.login;
     const orgavatar = i.avatar_url;
     console.log(orgname);
@@ -85,10 +84,10 @@ async function dta() {
   // alert(inputVal);
 }
 var img = $("img");
-  var used = {};
-  console.dir($(img[0]).attr("src"));
-  img.each(function() {
-    var src = $(this).attr('src');
-    if(used[src]) $(this).remove();
-    used[src]=1;
-  });
+var used = {};
+console.dir($(img[0]).attr("src"));
+img.each(function () {
+  var src = $(this).attr("src");
+  if (used[src]) $(this).remove();
+  used[src] = 1;
+});
