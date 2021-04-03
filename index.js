@@ -13,6 +13,9 @@ const startitle = document.getElementById("startitle");
 
 // Create elements....
 const hr = document.createElement("hr");
+const countdiv = document.createElement("div");
+const starimgdiv = document.createElement("div");
+const stariconcontainerdiv = document.createElement("div");
 
 // on click function....
 async function dta() {
@@ -97,7 +100,14 @@ async function dta() {
     staricon.src = "https://www.flaticon.com/svg/vstatic/svg/616/616489.svg?token=exp=1617473804~hmac=3acaf13accb5f404eb370a9cf061f807";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
-    stardiv.appendChild(staricon);
+    stardiv.appendChild(stariconcontainerdiv);
+    stariconcontainerdiv.appendChild(starimgdiv);
+    starimgdiv.appendChild(staricon);
+    stariconcontainerdiv.appendChild(countdiv);
+    // stardiv.appendChild(staricon);
+    // stardiv.appendChild(span);
+    countdiv.textContent = `${totalstars}`;
+    countdiv.className = "starcount";
     startitle.textContent = "Stars";
     startitle.appendChild(hr);
   }

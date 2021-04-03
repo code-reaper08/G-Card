@@ -218,6 +218,24 @@ hr{
   border-radius: 2.5px;
 }
 .staricon{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  float: left;
+  transition: transform .7s ease-in-out;
+}
+.staricon:hover{
+  transform: rotate(360deg);
+}
+#startitle{
+  font-size: medium;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+.starcount{
+  font-size: xx-large;
+  color: aquamarine;
+  padding-left: 204px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
