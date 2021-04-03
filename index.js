@@ -6,11 +6,13 @@ const numrepo = document.getElementById("numrepo");
 const gists = document.getElementById("gists");
 const orgsdiv = document.getElementById("orgs");
 const orgtitle = document.getElementById("orgtitle");
+const element = document.getElementById("maindiv");
+const contentdiv = document.getElementById("con");
+const stardiv = document.getElementById("stardiv");
+const startitle = document.getElementById("startitle");
 
 // Create elements....
 const hr = document.createElement("hr");
-
-const element = document.getElementById("maindiv");
 
 // on click function....
 async function dta() {
@@ -21,11 +23,13 @@ async function dta() {
   } else {
     element.style.display = "none";
   }
-  // if (element.style.display === "none") {
-  //     element.style.display = "block";
-  //   } else {
-  //     element.style.display = "none";
-  //   }
+
+  // Making content div invisible on the appearence of maindiv....
+  if (contentdiv.style.display === "block") {
+    contentdiv.style.display = "none";
+  } else {
+    contentdiv.style.display = "block";
+  }
 
   // Base url for every request....
   let baseURL = "https://api.github.com/users/";
@@ -58,12 +62,12 @@ async function dta() {
   let orginfo = data.organizations_url;
   const orgdata1 = await fetch(orginfo);
   const orgdata = await orgdata1.json();
-  console.log(orgdata);
+  // console.log(orgdata); // this line for debugging....
   if (orgdata.length != 0) {
     orgdata.forEach((i) => {
       const orgname = i.login;
       const orgavatar = i.avatar_url;
-      console.log(orgname);
+      console.log(orgname); // debug statement....
       let orgimg = document.createElement("img");
       orgimg.src = orgavatar;
       orgimg.className = "orimg";
@@ -72,6 +76,32 @@ async function dta() {
       orgtitle.appendChild(hr);
     });
   }
+
+  // for star info....
+  let starsarray = [];
+  let repourl = data.repos_url;
+  const repourl1 = await fetch(repourl);
+  const repodata = await repourl1.json();
+  console.log(repodata);
+  if (repodata.length != 0) {
+    repodata.forEach((j) => {
+      const eachstar =  j.stargazers_count;
+     starsarray.push(eachstar);
+    });
+     let totalstars = starsarray.reduce( function(a,b){
+       return a + b;
+     }, 0);
+     // final stars count....
+    console.log(totalstars);
+    let staricon = document.createElement("img");
+    staricon.src = "https://www.flaticon.com/svg/vstatic/svg/616/616489.svg?token=exp=1617473804~hmac=3acaf13accb5f404eb370a9cf061f807";
+    staricon.alt = "Total stars";
+    staricon.className = "staricon";
+    stardiv.appendChild(staricon);
+    startitle.textContent = "Stars";
+    startitle.appendChild(hr);
+  }
+
   // rendering on front end....
 
   // to check for null fields....
@@ -88,7 +118,7 @@ async function dta() {
   gists.textContent = pgists;
 
   // debug statements....
-  console.log(name, loc);
+  // console.log(name, loc);
   // alert(inputVal);
 }
 var img = $("img");
