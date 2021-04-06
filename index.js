@@ -10,12 +10,23 @@ const element = document.getElementById("maindiv");
 const contentdiv = document.getElementById("con");
 const stardiv = document.getElementById("stardiv");
 const startitle = document.getElementById("startitle");
+const submitbut = document.getElementById("submit");
 
 // Create elements....
 const hr = document.createElement("hr");
 const countdiv = document.createElement("div");
 const starimgdiv = document.createElement("div");
 const stariconcontainerdiv = document.createElement("div");
+
+var clickCounter=0;
+submitbut.onclick=function() {
+  clickCounter++;
+  if (clickCounter==2) {
+    window.location.reload();
+  }else {
+    dta();
+  }
+};
 
 // on click function....
 async function dta() {
