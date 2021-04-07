@@ -151,7 +151,7 @@ async function dta() {
       return el != null;
     });
     // console.log(lang);
-    // console.log(filteredlang);
+    console.log(filteredlang);
     const max = mode(filteredlang);
     console.log(max);
   }
