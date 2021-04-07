@@ -126,34 +126,55 @@ async function dta() {
     startitle.appendChild(hr);
 
     // function for mode....
-    function mode(array) {
-      if (array.length == 0) return null;
-      let modeMap = {};
-      let maxEl = array[0],
-        maxCount = 1;
-      for (let i = 0; i < array.length; i++) {
-        let el = array[i];
-        if (modeMap[el] == null) modeMap[el] = 1;
-        else modeMap[el]++;
-        if (modeMap[el] > maxCount) {
-          maxEl = el;
-          maxCount = modeMap[el];
-        }
-      }
-      return maxEl;
-    }
+    // function mode(array) {
+    //   if (array.length == 0) return null;
+    //   let modeMap = {};
+    //   let maxEl = array[0],
+    //     maxCount = 1;
+    //   for (let i = 0; i < array.length; i++) {
+    //     let el = array[i];
+    //     if (modeMap[el] == null) modeMap[el] = 1;
+    //     else modeMap[el]++;
+    //     if (modeMap[el] > maxCount) {
+    //       maxEl = el;
+    //       maxCount = modeMap[el];
+    //     }
+    //   }
+    //   return maxEl;
+    // }
+
     // for most used languages....
     repodata.forEach((k) => {
       eachlang = k.language;
       lang.push(eachlang);
     });
+
+    // removing null fields from the lang array....
     let filteredlang = lang.filter(function (el) {
       return el != null;
     });
+
+    // frequently used languages mechanism....
+    const num = 5;
+    const findMostFrequent = (num = 1) => {
+      const strArr = filteredlang; // filteredlang is a array with null fields removed....
+      const map = {};
+      strArr.forEach((word) => {
+        if (map.hasOwnProperty(word)) {
+          map[word]++;
+        } else {
+          map[word] = 1;
+        }
+      });
+      const frequencyArr = Object.keys(map).map((key) => [key, map[key]]);
+      frequencyArr.sort((a, b) => b[1] - a[1]);
+      return frequencyArr.slice(0, num).map((el) => el[0]);
+    };
+    console.log(findMostFrequent(num));
     // console.log(lang);
-    console.log(filteredlang);
-    const max = mode(filteredlang);
-    console.log(max);
+    // console.log(filteredlang);
+    // const max = mode(filteredlang);
+    // console.log(max);
   }
 
   // rendering on front end....
