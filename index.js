@@ -19,12 +19,12 @@ const starimgdiv = document.createElement("div");
 const stariconcontainerdiv = document.createElement("div");
 
 // Action switcher....
-let clickCounter=0;
-submitbut.onclick=function() {
+let clickCounter = 0;
+submitbut.onclick = function () {
   clickCounter++;
-  if (clickCounter==2) {
+  if (clickCounter == 2) {
     window.location.reload();
-  }else {
+  } else {
     dta();
   }
 };
@@ -94,22 +94,24 @@ async function dta() {
 
   // for star info....
   let starsarray = [];
+  const lang = [];
   let repourl = data.repos_url;
   const repourl1 = await fetch(repourl);
   const repodata = await repourl1.json();
   console.log(repodata);
   if (repodata.length != 0) {
     repodata.forEach((j) => {
-      const eachstar =  j.stargazers_count;
-     starsarray.push(eachstar);
+      const eachstar = j.stargazers_count;
+      starsarray.push(eachstar);
     });
-     let totalstars = starsarray.reduce( function(a,b){
-       return a + b;
-     }, 0);
-     // final stars count....
+    let totalstars = starsarray.reduce(function (a, b) {
+      return a + b;
+    }, 0);
+    // final stars count....
     console.log(totalstars);
     let staricon = document.createElement("img");
-    staricon.src = "https://www.flaticon.com/svg/vstatic/svg/616/616489.svg?token=exp=1617473804~hmac=3acaf13accb5f404eb370a9cf061f807";
+    staricon.src =
+      "https://www.flaticon.com/svg/vstatic/svg/616/616489.svg?token=exp=1617473804~hmac=3acaf13accb5f404eb370a9cf061f807";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
     stardiv.appendChild(stariconcontainerdiv);
@@ -122,6 +124,36 @@ async function dta() {
     countdiv.className = "starcount";
     startitle.textContent = "Stars";
     startitle.appendChild(hr);
+
+    // function for mode....
+    function mode(array) {
+      if (array.length == 0) return null;
+      let modeMap = {};
+      let maxEl = array[0],
+        maxCount = 1;
+      for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (modeMap[el] == null) modeMap[el] = 1;
+        else modeMap[el]++;
+        if (modeMap[el] > maxCount) {
+          maxEl = el;
+          maxCount = modeMap[el];
+        }
+      }
+      return maxEl;
+    }
+    // for most used languages....
+    repodata.forEach((k) => {
+      eachlang = k.language;
+      lang.push(eachlang);
+    });
+    let filteredlang = lang.filter(function (el) {
+      return el != null;
+    });
+    // console.log(lang);
+    // console.log(filteredlang);
+    const max = mode(filteredlang);
+    console.log(max);
   }
 
   // rendering on front end....
