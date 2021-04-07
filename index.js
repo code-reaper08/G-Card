@@ -18,7 +18,8 @@ const countdiv = document.createElement("div");
 const starimgdiv = document.createElement("div");
 const stariconcontainerdiv = document.createElement("div");
 
-var clickCounter=0;
+// Action switcher....
+let clickCounter=0;
 submitbut.onclick=function() {
   clickCounter++;
   if (clickCounter==2) {
