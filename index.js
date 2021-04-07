@@ -125,24 +125,6 @@ async function dta() {
     startitle.textContent = "Stars";
     startitle.appendChild(hr);
 
-    // function for mode....
-    // function mode(array) {
-    //   if (array.length == 0) return null;
-    //   let modeMap = {};
-    //   let maxEl = array[0],
-    //     maxCount = 1;
-    //   for (let i = 0; i < array.length; i++) {
-    //     let el = array[i];
-    //     if (modeMap[el] == null) modeMap[el] = 1;
-    //     else modeMap[el]++;
-    //     if (modeMap[el] > maxCount) {
-    //       maxEl = el;
-    //       maxCount = modeMap[el];
-    //     }
-    //   }
-    //   return maxEl;
-    // }
-
     // for most used languages....
     repodata.forEach((k) => {
       eachlang = k.language;
@@ -170,11 +152,8 @@ async function dta() {
       frequencyArr.sort((a, b) => b[1] - a[1]);
       return frequencyArr.slice(0, num).map((el) => el[0]);
     };
-    console.log(findMostFrequent(num));
-    // console.log(lang);
-    // console.log(filteredlang);
-    // const max = mode(filteredlang);
-    // console.log(max);
+    const mostusedlangs = findMostFrequent(num);
+    console.log(mostusedlangs);
   }
 
   // rendering on front end....
