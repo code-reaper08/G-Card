@@ -247,3 +247,14 @@ hr{
   margin-top: 30px;
   text-align: center;
 }
+#toplangs{
+  font-size: small;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+#toplangs > dt:hover{
+  transition: ease 1s;
+}
