@@ -1,0 +1,260 @@
+body {
+  background-color: #030000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23030000' width='11' height='11'/%3E%3Crect fill='%23030000' x='10' width='11' height='11'/%3E%3Crect fill='%23040101' y='10' width='11' height='11'/%3E%3Crect fill='%23040101' x='20' width='11' height='11'/%3E%3Crect fill='%23050202' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23050202' y='20' width='11' height='11'/%3E%3Crect fill='%23060303' x='30' width='11' height='11'/%3E%3Crect fill='%23060303' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23060404' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23070404' y='30' width='11' height='11'/%3E%3Crect fill='%23070505' x='40' width='11' height='11'/%3E%3Crect fill='%23080505' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23080606' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23090606' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23090707' y='40' width='11' height='11'/%3E%3Crect fill='%23090707' x='50' width='11' height='11'/%3E%3Crect fill='%230a0808' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%230a0808' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%230b0909' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%230b0909' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%230b0a0a' y='50' width='11' height='11'/%3E%3Crect fill='%230c0a0a' x='60' width='11' height='11'/%3E%3Crect fill='%230c0b0b' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%230d0b0b' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%230d0b0b' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%230d0c0c' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%230e0c0c' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%230e0d0d' x='70' width='11' height='11'/%3E%3Crect fill='%230e0d0d' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%230f0e0e' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%230f0e0e' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%230f0e0e' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23100f0f' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23100f0f' x='80' width='11' height='11'/%3E%3Crect fill='%23100f0f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23111010' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23111010' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23111010' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23121111' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23121111' x='90' width='11' height='11'/%3E%3Crect fill='%23121111' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23121212' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23131212' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23131212' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23131313' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23131313' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23141313' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23141414' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23141414' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23151414' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23151515' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23151515' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23151515' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23161515' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23161616' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23161616' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23161616' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23171616' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23171717' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23171717' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+#text {
+  border: none;
+  background: rgba(245, 245, 245, 0.801);
+  border-radius: 20px;
+  height: 50px;
+  width: 250px;
+  padding-left: 70px;
+  box-shadow: none;
+  outline: none;
+  transition: ease 0.5s;
+}
+#text:focus {
+  border: none;
+  background: rgba(245, 245, 245, 0.555);
+  border-radius: 20px;
+  height: 50px;
+  width: 270px;
+  box-shadow: none;
+  outline: none;
+}
+::placeholder {
+  padding-left: 50px;
+}
+#submit {
+  border-radius: 50%;
+  background-color: rgb(14, 14, 14);
+  position: relative;
+  border: none;
+  outline: none;
+}
+#submit:hover {
+  background: fff;
+  border: none;
+  position: relative;
+  outline: none;
+}
+#inpdiv {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+::placeholder {
+  padding-left: 50px;
+}
+#maindiv {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2304000a' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23090113' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%230d011d' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23120126' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23160130' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%231b0239' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%231f0243' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  display: none;
+  border-radius: 75px;
+  margin-top: 50px;
+}
+#gravatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  margin-top: 2rem;
+  transition: linear 0.5s;
+}
+#gravatar:hover {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  align-items: center;
+  margin-top: 2rem;
+}
+#gravatardiv {
+  margin-left: 2rem;
+}
+#name {
+  font-size: larger;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#location {
+  font-size: large;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#nameloc {
+  display: inline-block;
+  max-width: 250px;
+  padding: 10px;
+  /* word-break: break-all; optional */
+  padding-left: 60px;
+}
+.navbar navbar-expand-lg navbar-dark bg-dark {
+  margin-bottom: 30px;
+}
+#bio {
+  font-size: large;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#maindiv > div > div > div:nth-child(2) {
+  padding-top: 30px;
+  padding-left: 30px;
+  word-wrap: break-word;
+}
+/* progress bar styling */
+.charts_orb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: arial;
+  color: white;
+}
+.charts_orb .orb {
+  padding: 20px;
+}
+.charts_orb .orb .orb_graphic {
+  position: relative;
+}
+.charts_orb .orb .orb_graphic .orb_value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.charts_orb .orb .orb_label {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+.charts_orb svg {
+  width: 110px;
+  height: 110px;
+}
+.charts_orb svg circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 314.16, 314.16;
+  stroke-width: 2;
+  fill: transparent;
+  r: 50;
+  cx: 55;
+  cy: 55;
+}
+.charts_orb svg circle.fill {
+  stroke: #d3d3d3;
+}
+.charts_orb svg circle.progress {
+  stroke: #ff6b00;
+  transition: stroke-dashoffset 0.35s;
+  stroke-dashoffset: 214.16;
+  -webkit-animation: NAME-YOUR-ANIMATION 1.5s forwards;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0% {
+    stroke-dashoffset: 314.16;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.orimg {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  border-radius: 50px;
+  padding-left: 5px;
+}
+.orimg:hover {
+  width: 50px;
+  height: 50px;
+  display: inline;
+  border-radius: 50px;
+  padding-left: 5px;
+  transition: ease 0.8s;
+}
+#orgs {
+  margin-top: 3px;
+}
+#orgtitle {
+  font-size: medium;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+#con{
+  color: dimgray;
+  font-size: medium;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#con:hover {
+  color: #fdec6e8e;
+  text-shadow:0px 0px 30px #fdec6ebb;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+hr{
+  border: 10px;
+  border-radius: 2.5px;
+}
+.staricon{
+  width: 40px;
+  height: 40px;
+  float: left;
+  transition: transform .7s ease-in-out;
+}
+.staricon:hover{
+  transform: rotate(360deg);
+}
+#startitle{
+  font-size: medium;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+.starcount{
+  font-size: xx-large;
+  color: aquamarine;
+  padding-left: 204px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#langtitle{
+  font-size: medium;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+#toplangs{
+  font-size: small;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+#toplangs > dt:hover{
+  transition: ease 1s;
+}
