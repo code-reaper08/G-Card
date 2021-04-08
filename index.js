@@ -11,12 +11,16 @@ const contentdiv = document.getElementById("con");
 const stardiv = document.getElementById("stardiv");
 const startitle = document.getElementById("startitle");
 const submitbut = document.getElementById("submit");
+const langtitle = document.getElementById("langtitle");
+const divlang = document.getElementById("col1");
 
 // Create elements....
 const hr = document.createElement("hr");
 const countdiv = document.createElement("div");
 const starimgdiv = document.createElement("div");
 const stariconcontainerdiv = document.createElement("div");
+const dl = document.createElement("dl");
+const dt = document.createElement("dt");
 
 // Action switcher....
 let clickCounter = 0;
@@ -153,7 +157,13 @@ async function dta() {
       return frequencyArr.slice(0, num).map((el) => el[0]);
     };
     const mostusedlangs = findMostFrequent(num);
-    console.log(mostusedlangs);
+    console.log(mostusedlangs);  // final languages top array....
+
+    // rendering lang title....
+    langtitle.textContent = "TOP LANGUAGES";
+    mostusedlangs.forEach((l) => {
+      $(".col1").append("<div id=\"toplangs\"><dt>" +l+ "</dt></div>");
+    });
   }
 
   // rendering on front end....
