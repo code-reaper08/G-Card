@@ -195,11 +195,13 @@ async function dta() {
   // console.log(name, loc);
   // alert(inputVal);
 }
-var img = $("img");
-var used = {};
-console.dir($(img[0]).attr("src"));
-img.each(function () {
-  var src = $(this).attr("src");
-  if (used[src]) $(this).remove();
-  used[src] = 1;
-});
+// below code is written for a precaution purpose, it deletes duplicate images in the html document, in case of double fetching happens....
+ 
+// var img = $("img");
+// var used = {};
+// console.dir($(img[0]).attr("src"));
+// img.each(function () {
+//   var src = $(this).attr("src");
+//   if (used[src]) $(this).remove();
+//   used[src] = 1;
+// });
