@@ -256,5 +256,6 @@ hr{
   text-align: center;
 }
 #toplangs > dt:hover{
+  font-size:medium;
   transition: ease 1s;
 }
