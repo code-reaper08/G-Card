@@ -12,6 +12,7 @@ const stardiv = document.getElementById("stardiv");
 const startitle = document.getElementById("startitle");
 const submitbut = document.getElementById("submit");
 const langtitle = document.getElementById("langtitle");
+const profilelink = document.getElementById("profilelink");
 
 // Create elements....
 const hr = document.createElement("hr");
@@ -62,6 +63,9 @@ async function dta() {
   // for location....
   let loc = data.location;
 
+  // for profile link....
+  let profile = data.html_url;
+
   // for gravatar....
   let img = data.avatar_url;
 
@@ -76,6 +80,7 @@ async function dta() {
 
   // for organistation info....
   let orginfo = data.organizations_url;
+  // let orglinksarray = [];
   const orgdata1 = await fetch(orginfo);
   const orgdata = await orgdata1.json();
   // console.log(orgdata); // this line for debugging....
@@ -85,24 +90,20 @@ async function dta() {
       const orgavatar = i.avatar_url;
       const orgurl = i.url; // organisation url for every organisation....
       // console.log(orgname); // debug statement....
-      // console.log(orgurl);
-      sessionStorage.setItem("orgurl", orgurl); // session storage for storing orglinks.... // has a bug to solve....
+      console.log(orgurl);
+      // orglinksarray.push(orgurl);
       let orgimg = document.createElement("img"); // create a image element for organisations....
-      // let orglink = document.createElement("a");  create a link for organistaions....
-      // const orglinkreq = await fetch(orgurl);
-      // const orglinkjson = orglinkreq.json();
-      // console.log(orglinkjson);
-
-      // the above fetching doesn't work due to this error ("await is not doable here....")
+      let orglink = document.createElement("a");  //create a link for organistaions....
       orgimg.src = orgavatar;
       orgimg.alt = orgname;
       orgimg.className = "orimg";
-      orgsdiv.appendChild(orgimg);
+      orgsdiv.appendChild(orglink); // orlink is a anchor tag....
+      orglink.appendChild(orgimg);  // image is inserted between anchor tags....
+      orglink.href = `https://github.com/${orgname}`;
       orgtitle.textContent = "Organisations";
       orgtitle.appendChild(hr);
     });
   }
-
   // for star info....
   let starsarray = [];
   const lang = [];
@@ -188,6 +189,7 @@ async function dta() {
   biodiv.textContent = bio;
   numrepo.textContent = prepo;
   gists.textContent = pgists;
+  profilelink.href = profile;
 
   // debug statements....
   // console.log(name, loc);
