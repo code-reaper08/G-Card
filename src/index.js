@@ -83,14 +83,16 @@ async function dta() {
     orgdata.forEach((i) => {
       const orgname = i.login;
       const orgavatar = i.avatar_url;
-      // const orgurl = i.url; // organisation url for every organisation....
-      console.log(orgname); // debug statement....
-      // console.log(orgurl);
-      let orgimg = document.createElement("img");
-      // let orglink = document.createElement("a");
+      const orgurl = i.url; // organisation url for every organisation....
+      // console.log(orgname); // debug statement....
+      console.log(orgurl);
+      let orgimg = document.createElement("img"); // create a image element for organisations....
+      // let orglink = document.createElement("a");  create a link for organistaions....
       // const orglinkreq = await fetch(orgurl);
       // const orglinkjson = orglinkreq.json();
       // console.log(orglinkjson);
+
+      // the above fetching doesn't work due to this error ("await is not doable here....")
       orgimg.src = orgavatar;
       orgimg.alt = orgname;
       orgimg.className = "orimg";
