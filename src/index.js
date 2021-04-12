@@ -32,6 +32,12 @@ submitbut.onclick = function () {
   }
 };
 
+// ss function for screenshot....
+function ss(){
+  html2canvas(document.querySelector("#maindiv")).then(canvas => {
+    document.body.appendChild(canvas)
+});
+}
 // on click function....
 async function dta() {
   let inputVal = document.getElementById("text").value;
