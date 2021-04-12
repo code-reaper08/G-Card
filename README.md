@@ -10,6 +10,6 @@ On progress .......
 + added clickable links (**new**).
 
 ## Phase 3 ....
-+ initiated npm and html2canvas was added as a dependency.
-+ download and share options are worked on.
++ ~~initiated npm and html2canvas was added as a dependency.~~
++ ~~download and share options are worked on.~~
 
