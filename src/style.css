@@ -56,6 +56,11 @@ body {
   display: none;
   border-radius: 75px;
   margin-top: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  box-shadow: darkgoldenrod 2px 2px ;
 }
 #gravatar {
   width: 200px;
