@@ -60,7 +60,7 @@ body {
   margin-left: 10px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  box-shadow: darkgoldenrod 2px 2px ;
+  box-shadow: darkgoldenrod 2px 2px;
 }
 #gravatar {
   width: 200px;
@@ -199,7 +199,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 5px;
 }
-#con{
+#con {
   color: dimgray;
   font-size: medium;
   margin-top: 50px;
@@ -212,39 +212,38 @@ body {
 }
 #con:hover {
   color: #fdec6e8e;
-  text-shadow:0px 0px 30px #fdec6ebb;
+  text-shadow: 0px 0px 30px #fdec6ebb;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-hr{
+hr {
   border: 10px;
   border-radius: 2.5px;
 }
-.staricon{
+.staricon {
   width: 40px;
   height: 40px;
   float: left;
-  transition: transform .7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
-.staricon:hover{
+.staricon:hover {
   transform: rotate(360deg);
 }
-#startitle{
+#startitle {
   font-size: medium;
   color: aquamarine;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 5px;
 }
-.starcount{
+.starcount {
   font-size: xx-large;
   color: aquamarine;
   padding-left: 204px;
   font-family: Arial, Helvetica, sans-serif;
-
 }
-#langtitle{
+#langtitle {
   font-size: medium;
   color: aquamarine;
   font-family: Arial, Helvetica, sans-serif;
@@ -252,7 +251,7 @@ hr{
   margin-top: 30px;
   text-align: center;
 }
-#toplangs{
+#toplangs {
   font-size: small;
   color: aquamarine;
   font-family: Arial, Helvetica, sans-serif;
@@ -260,7 +259,7 @@ hr{
   margin-top: 10px;
   text-align: center;
 }
-#toplangs > dt:hover{
-  font-size:medium;
+#toplangs > dt:hover {
+  font-size: medium;
   transition: ease 1s;
 }

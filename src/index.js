@@ -33,10 +33,10 @@ submitbut.onclick = function () {
 };
 
 // ss function for screenshot....
-function ss(){
-  html2canvas(document.querySelector("#maindiv")).then(canvas => {
-    document.body.appendChild(canvas)
-});
+function ss() {
+  html2canvas(document.querySelector("#maindiv")).then((canvas) => {
+    document.body.appendChild(canvas);
+  });
 }
 // on click function....
 async function dta() {
@@ -100,12 +100,12 @@ async function dta() {
       console.log(orgurl);
       // orglinksarray.push(orgurl);
       let orgimg = document.createElement("img"); // create a image element for organisations....
-      let orglink = document.createElement("a");  //create a link for organistaions....
+      let orglink = document.createElement("a"); //create a link for organistaions....
       orgimg.src = orgavatar;
       orgimg.alt = orgname;
       orgimg.className = "orimg";
       orgsdiv.appendChild(orglink); // orlink is a anchor tag....
-      orglink.appendChild(orgimg);  // image is inserted between anchor tags....
+      orglink.appendChild(orgimg); // image is inserted between anchor tags....
       orglink.href = `https://github.com/${orgname}`;
       orgtitle.textContent = "Organisations";
       orgtitle.appendChild(hr);
@@ -172,13 +172,15 @@ async function dta() {
       return frequencyArr.slice(0, num).map((el) => el[0]);
     };
     const mostusedlangs = findMostFrequent(num);
-    console.log(mostusedlangs);  // final languages top array....
+    console.log(mostusedlangs); // final languages top array....
 
     // rendering lang title....
     langtitle.textContent = "TOP LANGUAGES";
     langtitle.appendChild(hr);
     mostusedlangs.forEach((l) => {
-      $(".col1").append("<div id=\"toplangs\"><dt class =\"langdata\">" +l+ "</dt></div>"); // dynamic language rendering....
+      $(".col1").append(
+        '<div id="toplangs"><dt class ="langdata">' + l + "</dt></div>"
+      ); // dynamic language rendering....
     });
   }
 
@@ -203,7 +205,7 @@ async function dta() {
   // alert(inputVal);
 }
 // below code is written for a precaution purpose, it deletes duplicate images in the html document, in case of double fetching happens....
- 
+
 // var img = $("img");
 // var used = {};
 // console.dir($(img[0]).attr("src"));
