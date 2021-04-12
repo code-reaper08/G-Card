@@ -1,3 +1,4 @@
+// Selecting elements....
 const username = document.getElementById("name");
 const gravatar = document.getElementById("gravatar");
 const locdisp = document.getElementById("location");
