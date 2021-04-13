@@ -1,5 +1,7 @@
 // requiring dom-to-image....
 // import domtoimage from '../node_modules/dom-to-image';
+// requiring filesaver....
+// import { saveAs } from '../node_modules/file-saver';
 
 // Selecting elements....
 const username = document.getElementById("name");
@@ -44,12 +46,14 @@ function ss() {
 }
 
 // ssjs function for screenshot.... // using normal js....
-async function ssjs(){
-  await domtoimage.toBlob(document.getElementById('maindiv'))
-    .then(function(blob) {
-      window.saveAs(blob, 'myimg.png');
-    });
+function ssjs(){
+  domtoimage.toBlob(document.getElementById('gravatardiv'))
+  .then(function (blob) {
+      saveAs(blob, 'my-node.png');
+  });
 }
+    
+
 // on click function....
 async function dta() {
   let inputVal = document.getElementById("text").value;
