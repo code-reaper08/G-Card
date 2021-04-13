@@ -52,6 +52,22 @@ function ss() {
 //       saveAs(blob, 'my-node.png');
 //   });
 // }
+
+// another screenshot method....
+$(function() { 
+  $("#ssjsbut").click(function() { 
+      html2canvas($("#maindiv"), {
+          onrendered: function(canvas) {
+              theCanvas = canvas;
+              document.body.appendChild(canvas);
+
+              canvas.toBlob(function(blob) {
+        saveAs(blob, "Dashboard.png"); 
+      });
+          }
+      });
+  });
+}); 
     
 
 // on click function....
