@@ -1,3 +1,6 @@
+// requiring dom-to-image....
+// import domtoimage from '../node_modules/dom-to-image';
+
 // Selecting elements....
 const username = document.getElementById("name");
 const gravatar = document.getElementById("gravatar");
@@ -32,11 +35,20 @@ submitbut.onclick = function () {
   }
 };
 
-// ss function for screenshot....
+// ss function for screenshot.... // using html2canvas....
 function ss() {
   html2canvas(document.querySelector("#maindiv")).then((canvas) => {
     document.body.appendChild(canvas);
   });
+  allowTaint = false;
+}
+
+// ssjs function for screenshot.... // using normal js....
+async function ssjs(){
+  await domtoimage.toBlob(document.getElementById('maindiv'))
+    .then(function(blob) {
+      window.saveAs(blob, 'myimg.png');
+    });
 }
 // on click function....
 async function dta() {

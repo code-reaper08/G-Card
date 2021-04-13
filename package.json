@@ -1,0 +1,24 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "On progress .......",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-reaper08/dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-reaper08/dev/issues"
+  },
+  "homepage": "https://github.com/code-reaper08/dev#readme",
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.5"
+  }
+}
