@@ -56,18 +56,14 @@ function ss() {
 // another screenshot method....
 $(function() { 
   $("#ssjsbut").click(function() { 
-      html2canvas($("#maindiv"), {
-          onrendered: function(canvas) {
-              theCanvas = canvas;
-              document.body.appendChild(canvas);
-
+    html2canvas($('#maindiv').get(0)).then( function (canvas) {
+      $("#body").append(canvas);
+      });
               canvas.toBlob(function(blob) {
         saveAs(blob, "Dashboard.png"); 
       });
-          }
-      });
-  });
-}); 
+          })
+        })
     
 
 // on click function....
@@ -163,7 +159,7 @@ async function dta() {
     console.log(totalstars);
     let staricon = document.createElement("img");
     staricon.src =
-      "https://www.flaticon.com/svg/vstatic/svg/616/616489.svg?token=exp=1617473804~hmac=3acaf13accb5f404eb370a9cf061f807";
+      "../img/star.png";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
     stardiv.appendChild(stariconcontainerdiv);
