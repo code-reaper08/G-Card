@@ -46,12 +46,12 @@ function ss() {
 }
 
 // ssjs function for screenshot.... // using normal js....
-function ssjs(){
-  domtoimage.toBlob(document.getElementById('gravatardiv'))
-  .then(function (blob) {
-      saveAs(blob, 'my-node.png');
-  });
-}
+// function ssjs(){
+//   domtoimage.toBlob(document.getElementById('langdiv'))
+//   .then(function (blob) {
+//       saveAs(blob, 'my-node.png');
+//   });
+// }
     
 
 // on click function....
@@ -69,6 +69,7 @@ async function dta() {
     contentdiv.style.display = "none";
   } else {
     contentdiv.style.display = "block";
+    ssjs()
   }
 
   // Base url for every request....

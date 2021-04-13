@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GithubAPI</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script type="text/javascript" src="../ext/html2canvas.js"></script> -->
-    <script src="../ext/dom-to-image.js"></script>
-    <script src="../ext/FileSaver.js"></script>
+    <script type="text/javascript" src="../ext/html2canvas.js"></script>
+    <!-- <script src="../ext/dom-to-image.js"></script> -->
+    <!-- <script src="../ext/FileSaver.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   </head>
 
@@ -60,6 +60,7 @@
      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ad repellendus deleniti veniam aspernatur mollitia obcaecati quaerat at doloremque necessitatibus, voluptates sapiente enim ut distinctio corrupti quisquam voluptatem expedita saepe.
     </div>
     <!-- main div for download -->
+    <div id="ss"> <!--screenshot div-->
     <div id="maindiv" style="display: none;">
       <div class="container">
         <div class="row">
@@ -121,7 +122,7 @@
         </div>
           </div>
           <div class="col-sm"> <!--column 3-->
-            <div class="container">
+            <div id="langdiv" class="container">
               <p id="langtitle"></p>
               <div class="row">
                 <div class="col1"></div>
@@ -130,6 +131,8 @@
         </div>
       </div>
     </div>
+    </div>
+    </div> <!--ss div ending-->
     <!-- button for taking screenshot -->
     <button id="ssbut" onclick="ss()">Take screenshot</button>
     <button id="ssbut" onclick="ssjs()">Take screenshot using normal js</button>
@@ -140,7 +143,7 @@
     <script src="../ext/counter.js"></script>
     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
     <script src="index.js"></script>
-    <script src="../node_modules/file-saver/dist/FileSaver.min.js"></script>
+    <!-- <script src="../node_modules/file-saver/dist/FileSaver.min.js"></script> -->
     
     
   </body>
