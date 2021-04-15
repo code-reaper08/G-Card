@@ -20,6 +20,7 @@ const submitbut = document.getElementById("submit");
 const langtitle = document.getElementById("langtitle");
 const profilelink = document.getElementById("profilelink");
 const butdiv = document.getElementById("butdiv");
+const inpdiv = document.getElementById("inpdiv");
 
 // Create elements....
 const hr = document.createElement("hr");
@@ -82,8 +83,10 @@ async function dta() {
   // Making content div invisible on the appearence of maindiv....
   if (contentdiv.style.display === "block") {
     contentdiv.style.display = "none";
+    inpdiv.style.display = "none";
   } else {
     contentdiv.style.display = "block";
+    inpdiv.style.display = "block";
     ssjs()
   }
 
@@ -127,7 +130,6 @@ async function dta() {
     orgdata.forEach((i) => {
       const orgname = i.login;
       const orgavatar = i.avatar_url;
-      const orgavatarf = orgavatar + ".png"
       const orgurl = i.url; // organisation url for every organisation....
       // console.log(orgname); // debug statement....
       console.log(orgurl);
