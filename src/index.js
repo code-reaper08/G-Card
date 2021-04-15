@@ -47,7 +47,7 @@ submitbut.onclick = function () {
 
 // ssjs function for screenshot.... // using normal js....  // almost working.... hurray ...........................
 function ss(){
-  domtoimage.toBlob(document.getElementById('ss'))
+  domtoimage.toBlob(document.getElementById('ss') , {height : 1000, width : 1440})   // div is cropped here for suitable output.....
   .then(function (blob) {
       saveAs(blob, 'my-node.png');
   });
