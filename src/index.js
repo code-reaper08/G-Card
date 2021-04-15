@@ -19,6 +19,7 @@ const startitle = document.getElementById("startitle");
 const submitbut = document.getElementById("submit");
 const langtitle = document.getElementById("langtitle");
 const profilelink = document.getElementById("profilelink");
+const butdiv = document.getElementById("butdiv");
 
 // Create elements....
 const hr = document.createElement("hr");
@@ -72,8 +73,10 @@ async function dta() {
   // Making maindiv visible on button click....
   if (element.style.display === "none") {
     element.style.display = "block";
+    butdiv.style.display = "block";
   } else {
     element.style.display = "none";
+    butdiv.style.display = "none";
   }
 
   // Making content div invisible on the appearence of maindiv....

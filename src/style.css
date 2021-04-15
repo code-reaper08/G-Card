@@ -272,7 +272,19 @@ hr {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10px;
 }
+#sharebut{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #ff6b00;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
 #butdiv{
   display: flexbox;
-  
+  align-content: space-between;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
