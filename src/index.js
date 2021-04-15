@@ -124,6 +124,7 @@ async function dta() {
     orgdata.forEach((i) => {
       const orgname = i.login;
       const orgavatar = i.avatar_url;
+      const orgavatarf = orgavatar + ".png"
       const orgurl = i.url; // organisation url for every organisation....
       // console.log(orgname); // debug statement....
       console.log(orgurl);
