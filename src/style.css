@@ -263,3 +263,16 @@ hr {
   font-size: medium;
   transition: ease 1s;
 }
+#ssbut{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #ff6b00;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+#butdiv{
+  display: flexbox;
+  
+}
