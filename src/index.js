@@ -38,32 +38,32 @@ submitbut.onclick = function () {
 };
 
 // ss function for screenshot.... // using html2canvas....
-function ss() {
-  html2canvas(document.querySelector("#maindiv")).then((canvas) => {
-    document.body.appendChild(canvas);
-  });
-  allowTaint = false;
-}
-
-// ssjs function for screenshot.... // using normal js....
-// function ssjs(){
-//   domtoimage.toBlob(document.getElementById('langdiv'))
-//   .then(function (blob) {
-//       saveAs(blob, 'my-node.png');
+// function ss() {
+//   html2canvas(document.querySelector("#maindiv")).then((canvas) => {
+//     document.body.appendChild(canvas);
 //   });
+//   allowTaint = false;
 // }
 
-// another screenshot method....
-$(function() { 
-  $("#ssjsbut").click(function() { 
-    html2canvas($('#maindiv').get(0)).then( function (canvas) {
-      $("#body").append(canvas);
-      });
-              canvas.toBlob(function(blob) {
-        saveAs(blob, "Dashboard.png"); 
-      });
-          })
-        })
+// ssjs function for screenshot.... // using normal js....  // almost working.... hurray ...........................
+function ss(){
+  domtoimage.toBlob(document.getElementById('ss'))
+  .then(function (blob) {
+      saveAs(blob, 'my-node.png');
+  });
+}
+
+// // another screenshot method.... //ssjsbut
+// $(function() { 
+//   $("#ssjsbut").click(function() { 
+//     html2canvas($('#gravatardiv').get(0)).then( function (canvas) {
+//       $("#body").append(canvas);
+//       });
+//               canvas.toBlob(function(blob) {
+//         saveAs(blob, "Dashboard.png"); 
+//       });
+//           })
+//         })
     
 
 // on click function....
