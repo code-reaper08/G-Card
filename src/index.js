@@ -50,10 +50,10 @@ submitbut.onclick = function () {
 // ssjs function for screenshot.... // using normal js....  // almost working.... hurray ...........................
 function ss(){
   heightdiv = document.getElementById("ss").offsetHeight
-  console.log("heightdiv" + heightdiv);
+  console.log("heightdiv" + heightdiv); // this logs the current height of the element....
   widthdiv = document.getElementById("ss").offsetWidth
-  console.log("Widthdiv" + widthdiv);
-  domtoimage.toBlob(document.getElementById('ss') , {})   // div is cropped here for suitable output.....
+  console.log("Widthdiv" + widthdiv); // this logs the current width of the elemrnt....
+  domtoimage.toBlob(document.getElementById('ss'))   // div is cropped here for suitable output..... {"height" : heightdiv , "width" : widthdiv}
   .then(function (blob) {
       saveAs(blob, `${username.textContent}.png`);
   });
