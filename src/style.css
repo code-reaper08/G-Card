@@ -285,6 +285,15 @@ hr {
   display: flexbox;
   align-content: space-between;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  /* padding-top: 30px;
+  margin-top: 70px; */
+  /* padding-bottom: 50px; */
+
+}
+#ss{
+  width: 1400px;
+  height: 350px;
+  display: flexbox;
+  /* min-width: 792;
+  min-height: 198; */
 }
