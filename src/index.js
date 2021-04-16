@@ -46,10 +46,10 @@ submitbut.onclick = function () {
 //   });
 //   allowTaint = false;
 // }
-
+heightdiv = document.getElementById("ss")
 // ssjs function for screenshot.... // using normal js....  // almost working.... hurray ...........................
 function ss(){
-  domtoimage.toBlob(document.getElementById('ss'))   // div is cropped here for suitable output.....
+  domtoimage.toBlob(document.getElementById('ss') , {})   // div is cropped here for suitable output.....
   .then(function (blob) {
       saveAs(blob, `${username.textContent}.png`);
   });

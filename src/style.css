@@ -291,9 +291,8 @@ hr {
 
 }
 #ss{
-  width: 1400px;
-  height: 350px;
-  display: flexbox;
+  /* width: 1400px;
+  height: 350px; */
   /* min-width: 792;
   min-height: 198; */
 }
