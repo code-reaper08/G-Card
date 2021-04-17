@@ -87,10 +87,10 @@ async function dta() {
   // Making content div invisible on the appearence of maindiv....
   if (contentdiv.style.display === "block") {
     contentdiv.style.display = "none";
-    inpdiv.style.display = "none";
+    // inpdiv.style.display = "none";
   } else {
     contentdiv.style.display = "block";
-    inpdiv.style.display = "block";
+    // inpdiv.style.display = "block";
     ssjs()
   }
 
