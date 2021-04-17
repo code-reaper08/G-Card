@@ -254,19 +254,20 @@ async function dta() {
 //   used[src] = 1;
 // });
 
+// Theme toggler mechanism....
 let themetoggler = 0;
 document.getElementById("theme").onclick = function () {
   themetoggler++;
   if (themetoggler == 1) {
-    document.getElementById("theme").innerText = "bullseye"
+    document.getElementById("theme").innerText = "bullseye" // changes inner text of the button....
     theme1()
   }
   else if (themetoggler == 2){
-    document.getElementById("theme").innerText = "squares"
+    document.getElementById("theme").innerText = "squares" // changes inner text of the button....
     theme2()
   }
   else if (themetoggler == 3){
-    theme3()
+    theme3() // need to find a good svg background....
   }
 };
 function theme1() {
