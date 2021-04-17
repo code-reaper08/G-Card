@@ -253,7 +253,29 @@ async function dta() {
 //   if (used[src]) $(this).remove();
 //   used[src] = 1;
 // });
+
+let themetoggler = 0;
+document.getElementById("theme").onclick = function () {
+  themetoggler++;
+  if (themetoggler == 1) {
+    document.getElementById("theme").innerText = "bullseye"
+    theme1()
+  }
+  else if (themetoggler == 2){
+    document.getElementById("theme").innerText = "squares"
+    theme2()
+  }
+  else if (themetoggler == 3){
+    theme3()
+  }
+};
 function theme1() {
   element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
   // document.body.style.backgroundImage = "url('img_tree.png')";
+}
+function theme2(){
+  element.style.backgroundImage = "url('../img/Protruding-Squares.png')";
+}
+function theme3(){
+  console.log("Theme 3 will come here")
 }
