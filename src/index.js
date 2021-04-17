@@ -253,3 +253,7 @@ async function dta() {
 //   if (used[src]) $(this).remove();
 //   used[src] = 1;
 // });
+function theme1() {
+  element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
+  // document.body.style.backgroundImage = "url('img_tree.png')";
+}
