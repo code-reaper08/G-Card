@@ -301,8 +301,11 @@ function theme4(){
   document.getElementById("bio").style.color = "#2f4f4f"
   document.getElementById("startitle").style.color = "#2f4f4f"
   document.getElementById("langtitle").style.color = "#2f4f4f"
-  document.getElementsByClassName("#toplangs > dt").style.color = "#2f4f4f"
-
+  // let langlistcolor = document.getElementById("toplangs").childNodes;
+  // console.log(langlistcolor);
+  document.getElementById("#toplangs").style.color = "#2f4f4f"
+  // document.querySelector("#toplangs > dt")
+  // console.log(langlistcolor);
 
 
 }
