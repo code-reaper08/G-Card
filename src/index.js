@@ -256,7 +256,7 @@ async function dta() {
 
 // Theme toggler mechanism....
 let themetoggler = 0;
-document.getElementById("theme").onclick = function () {
+document.getElementById("theme").onclick = function themetoggle () {
   themetoggler++;
   if (themetoggler == 1) {
     document.getElementById("theme").innerText = "bullseye" // changes inner text of the button....
@@ -272,7 +272,10 @@ document.getElementById("theme").onclick = function () {
   }
   else if (themetoggler == 4){
     document.getElementById("theme").innerText = "white" // changes inner text of the button....
-    theme4()
+    // theme4()
+  }
+  else if (themetoggler == 5){
+    return themetoggle()
   }
 };
 

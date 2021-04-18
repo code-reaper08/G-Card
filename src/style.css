@@ -300,8 +300,22 @@ hr {
   /* padding-bottom: 50px; */
 
 }
-
-/* color testing */
-bool{
-  color: #2f4f4f;
+#theme{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #ff6b00;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+#theme:hover{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #ff9c08;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+  transition:ease 1s;
 }
