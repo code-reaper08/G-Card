@@ -274,9 +274,14 @@ document.getElementById("theme").onclick = function themetoggle () {
     document.getElementById("theme").innerText = "white" // changes inner text of the button....
     // theme4()
   }
-  else if (themetoggler == 5){
-    return themetoggle()
-  }
+  // else if (themetoggler == 5){
+  //   console.log("recurivse started.")
+  //   return themetoggle()
+  // }
+ else{
+   themetoggler = null;
+   themetoggle()
+ }
 };
 
 // all theme changing functions....
