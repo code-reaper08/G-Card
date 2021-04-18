@@ -270,6 +270,10 @@ document.getElementById("theme").onclick = function () {
     document.getElementById("theme").innerText = "inter" // changes inner text of the button....
     theme3()
   }
+  else if (themetoggler == 4){
+    document.getElementById("theme").innerText = "white" // changes inner text of the button....
+    theme4()
+  }
 };
 function theme1() {
   element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
@@ -280,4 +284,8 @@ function theme2(){
 }
 function theme3(){
   element.style.backgroundImage = "url('../img/Geometric-Intersection.png')";
+}
+function theme4(){
+  // <a href='https://www.freepik.com/photos/background'>Background photo created by benzoix - www.freepik.com</a>
+  element.style.backgroundImage = "url('../img/grungy-white-background-natural-cement-stone-old-texture-as-retro-pattern-wall-conceptual-wall-banner-grunge-material-construction.jpg')";
 }
