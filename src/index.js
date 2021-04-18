@@ -267,8 +267,8 @@ document.getElementById("theme").onclick = function () {
     theme2()
   }
   else if (themetoggler == 3){
-    theme3() // need to find a good svg background....
-  }
+    document.getElementById("theme").innerText = "inter" // changes inner text of the button....
+    theme3()
 };
 function theme1() {
   element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
@@ -278,5 +278,5 @@ function theme2(){
   element.style.backgroundImage = "url('../img/Protruding-Squares.png')";
 }
 function theme3(){
-  console.log("Theme 3 will come here")
+  element.style.backgroundImage = "url('../img/Geometric-Intersection.png')";
 }
