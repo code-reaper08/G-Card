@@ -269,6 +269,7 @@ document.getElementById("theme").onclick = function () {
   else if (themetoggler == 3){
     document.getElementById("theme").innerText = "inter" // changes inner text of the button....
     theme3()
+  }
 };
 function theme1() {
   element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
