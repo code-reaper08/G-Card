@@ -275,17 +275,34 @@ document.getElementById("theme").onclick = function () {
     theme4()
   }
 };
+
+// all theme changing functions....
 function theme1() {
   element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
   // document.body.style.backgroundImage = "url('img_tree.png')";
+  element.style.transition = "ease 2s"
+
 }
 function theme2(){
   element.style.backgroundImage = "url('../img/Protruding-Squares.png')";
+  element.style.transition = "ease 2s"
+
 }
 function theme3(){
   element.style.backgroundImage = "url('../img/Geometric-Intersection.png')";
+  element.style.transition = "ease 2s"
 }
 function theme4(){
   // <a href='https://www.freepik.com/photos/background'>Background photo created by benzoix - www.freepik.com</a>
   element.style.backgroundImage = "url('../img/grungy-white-background-natural-cement-stone-old-texture-as-retro-pattern-wall-conceptual-wall-banner-grunge-material-construction.jpg')";
+  document.getElementById("name").style.color = "#2f4f4f"
+  document.getElementById("location").style.color = "#2f4f4f"
+  document.getElementById("orgtitle").style.color = "#2f4f4f"
+  document.getElementById("bio").style.color = "#2f4f4f"
+  document.getElementById("startitle").style.color = "#2f4f4f"
+  document.getElementById("langtitle").style.color = "#2f4f4f"
+  document.getElementsByClassName("#toplangs > dt").style.color = "#2f4f4f"
+
+
+
 }
