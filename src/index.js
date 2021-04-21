@@ -53,10 +53,21 @@ function ss(){
   console.log("heightdiv" + heightdiv); // this logs the current height of the element....
   widthdiv = document.getElementById("ss").offsetWidth
   console.log("Widthdiv" + widthdiv); // this logs the current width of the elemrnt....
+  
+    if ( window.innerWidth <= 800 &&  window.innerHeight <= 600 ){
+      console.log("i am mobile")
+      domtoimage.toBlob(document.getElementById('ss') , {"height" : 2000 , "width" : 1500})   // div is cropped here for suitable output..... {"height" : heightdiv , "width" : widthdiv}
+      .then(function (blob) {
+          saveAs(blob, `${username.textContent}.png`);
+      });
+    }
+   else{
+     console.log("i am pc")
   domtoimage.toBlob(document.getElementById('ss') , {"height" : 500 , "width" : 1500})   // div is cropped here for suitable output..... {"height" : heightdiv , "width" : widthdiv}
   .then(function (blob) {
       saveAs(blob, `${username.textContent}.png`);
   });
+}
 }
 
 // // another screenshot method.... //ssjsbut
