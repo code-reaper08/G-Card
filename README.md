@@ -16,6 +16,7 @@ On progress .......
 + ~~Make a shareable link for sharing the website.~~
 
 ## Phase 4 ....
-+ Added a theme functionality ( toggler)
-+ Made 4 different themes.
++ ~~Added a theme functionality ( toggler)~~
++ ~~Made 4 different themes.~~
 + Made the `theme` button to iterate through 4 different themes.
++ added mobile compatibility.
