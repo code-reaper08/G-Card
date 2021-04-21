@@ -54,7 +54,7 @@ function ss(){
   widthdiv = document.getElementById("ss").offsetWidth
   console.log("Widthdiv" + widthdiv); // this logs the current width of the elemrnt....
   
-    if ( window.innerWidth <= 800 &&  window.innerHeight <= 600 ){
+  if (typeof screen.orientation !== 'undefined'){ 
       console.log("i am mobile")
       domtoimage.toBlob(document.getElementById('ss') , {"height" : 2000 , "width" : 1500})   // div is cropped here for suitable output..... {"height" : heightdiv , "width" : widthdiv}
       .then(function (blob) {
