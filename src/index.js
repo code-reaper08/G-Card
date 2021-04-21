@@ -281,14 +281,14 @@ document.getElementById("theme").onclick = function themetoggle () {
     document.getElementById("theme").innerText = "inter" // changes inner text of the button....
     theme3()
   }
-  else if (themetoggler == 4){
-    document.getElementById("theme").innerText = "white" // changes inner text of the button....
-    // theme4()
-  }
-  // else if (themetoggler == 5){
-  //   console.log("recurivse started.")
-  //   return themetoggle()
+  // else if (themetoggler == 4){
+  //   document.getElementById("theme").innerText = "white" // changes inner text of the button....
+  //   // theme4()
   // }
+  // // else if (themetoggler == 5){
+  // //   console.log("recurivse started.")
+  // //   return themetoggle()
+  // // }
  else{
    themetoggler = null;
    themetoggle()
