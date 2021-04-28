@@ -1,169 +1,295 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About me</title>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About me</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  /* opacity: 0.65; */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        position: relative;
+        /* opacity: 0.65; */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bgimg-1 {
+        background-image: url("https://images.unsplash.com/photo-1523192766450-bd262e151029?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1041&q=80");
+        min-height: 100%;
+      }
 
-}
-.bgimg-1 {
-  background-image: url("https://images.unsplash.com/photo-1523192766450-bd262e151029?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1041&q=80");
-  min-height: 100%;
-}
+      .bgimg-2 {
+        background-image: url("https://images.unsplash.com/photo-1619328910915-e3115c1aecf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80");
+        min-height: 400px;
+      }
 
-.bgimg-2 {
-  background-image: url("https://images.unsplash.com/photo-1619328910915-e3115c1aecf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80");
-  min-height: 400px;
-}
+      .bgimg-3 {
+        background-image: url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=635&q=80");
+        min-height: 400px;
+      }
 
-.bgimg-3 {
-  background-image: url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=635&q=80");
-  min-height: 400px;
-}
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+        }
+      }
+      a:link,
+      a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        border-radius: 75px;
+        text-decoration: none;
+        display: inline-block;
+      }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
+      a:hover,
+      a:active {
+        background-color: rgba(255, 0, 0, 0.616);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">It's Vishwa aka code-reaper08</span>
+      </div>
+    </div>
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
+    <div
+      style="
+        color: #777;
+        background-color: white;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
+      "
+    >
+      <h3 style="text-align: center">Who I am</h3>
+      <p>
+        I am a continuous learner and explorer who love to dive deep into the
+        Javascript Ocean. A GitHub Developer Program Member <br />
+        With no wonder, I am a UnderGrad pursuing Computer Science and
+        Engineering as my major field of study in India. <br />
+        Guess these below points would fit me in, <br />
+        I am a Student <br />
+        I love to play and watch Football.⚽ <br />
+        I love programming.💻 <br />
+        I feel rebel.🐱‍🏍<br />
+        I vibe to 2pac, Bob Marley and freddie.🎶.
+      </p>
+    </div>
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  border-radius: 75px;
-  text-decoration: none;
-  display: inline-block;
-}
+    <div class="bgimg-2">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >My projects</span
+        >
+      </div>
+    </div>
 
-a:hover, a:active {
-  background-color: rgba(255, 0, 0, 0.616);
-}
-</style>
-</head>
-<body>
+    <div style="position: relative">
+      <div
+        style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <h2 id="notable-projects-of-my-own-">Notable projects of my own 💖</h2>
+        <p><br /></p>
+        <ol>
+          <li>
+            <p>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=VishwaR.mdsnippets"
+                ><strong>MDSnippets</strong></a
+              >
+              - <strong>MDSnippets</strong> is a Snippet autocomplete extension
+              for VScode.Just give a try and I am planning to give a update for
+              this.
+            </p>
+            <p>
+              <strong><em>repo link</em></strong> :
+              <a href="https://github.com/code-reaper08/MDsnippets"
+                >https://github.com/code-reaper08/MDsnippets</a
+              >
+              <br />
+              <br />
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://packagecontrol.io/packages/MarkdownAssistant"
+                ><strong>MarkdownAssistant</strong></a
+              >
+              - <strong>MarkdownAssistant</strong> is a snippet autocomplete
+              package for SublimeText-3, Which enables easy editing and creation
+              of MarkDown files.
+            </p>
+            <p>
+              <strong><em>repo link</em></strong> :
+              <a href="https://github.com/code-reaper08/MarkdownAssistant"
+                >https://github.com/code-reaper08/MarkdownAssistant</a
+              >
+              <br />
+              <br />
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://www.npmjs.com/package/docgen-x"
+                ><strong>DocGen-X</strong></a
+              >
+              - <strong>docgen-x</strong> is a a node CLI tool, which helps in
+              creating License files for projects with ease. It was made with
+              lesser number of dependencies.
+            </p>
+            <p>
+              <strong><em>repo link</em></strong> :
+              <a href="https://github.com/code-reaper08/docgen-x"
+                >https://github.com/code-reaper08/docgen-x</a
+              >
+              <br />
+              <br />
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://pypi.org/project/PyBrainf-ck/"
+                ><strong>PyBrainf-ck</strong></a
+              >
+              - <strong>PyBrainf-ck</strong> is a simple package which gives the
+              brainfuck code for the passed text. It&#39;s available in PyPi for
+              download.
+            </p>
+            <p>
+              <strong><em>repo link</em></strong> :
+              <a href="https://github.com/code-reaper08/PyBrainf_ck"
+                >https://github.com/code-reaper08/PyBrainf_ck</a
+              >
+              <br />
+              <br />
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://vishwa-r.itch.io/gameboy-adventures"
+                ><strong>GameBoy-Adventures</strong></a
+              >
+              - <strong>GameBoy-Adventures</strong> is a simple Platformer game
+              built using Godot Engine.This is a simple retro styled platformer
+              game fully built using Godot Engine.
+            </p>
+            <p>
+              <strong><em>repo link</em></strong> :
+              <a href="https://github.com/code-reaper08/GameBoy-Adventures"
+                >https://github.com/code-reaper08/GameBoy-Adventures</a
+              >
+            </p>
+          </li>
 
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">It's Vishwa aka code-reaper08</span>
-  </div>
-</div>
+          <p>
+            <br />
+            <!-- <br></p> -->
+            <li>
+              <p>
+                <a href="https://code-reaper08.github.io/Link-Master/"
+                  ><strong>Link-Master</strong></a
+                >
+                - <strong>Link-Master</strong> is a Web-APP which finds all the
+                Broken-URL&#39;s in your Project&#39;s README file. It uses
+                Cheerio for scraping the exact Readme file content and present
+                you with status for each link either as &quot;Success&quot; or
+                &quot;Failure&quot;.
+              </p>
+              <p>
+                <strong><em>repo link</em></strong> :
+                <a href="https://github.com/code-reaper08/Link-Master"
+                  >https://github.com/code-reaper08/Link-Master</a
+                >
+              </p>
+            </li>
+          </p>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Who I am</h3>
-  <p>I am a continuous learner and explorer who love to dive deep into the Javascript Ocean. A GitHub Developer Program Member <br>
-    With no wonder, I am a UnderGrad pursuing Computer Science and Engineering as my major field of study in India. <br>
-    Guess these below points would fit me in, <br>
-    I am a Student <br>
-    I love to play and watch Football.⚽ <br>
-    I love programming.💻 <br>
-    I feel rebel.🐱‍🏍<br>
-    I vibe to 2pac, Bob Marley and freddie.🎶.</p>
-</div>
+          <p>
+            <br />
+            <br />
+          </p>
+        </ol>
+      </div>
+    </div>
 
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">My projects</span>
-  </div>
-</div>
+    <div class="bgimg-3">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >SCROLL UP</span
+        >
+      </div>
+    </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <h2 id="notable-projects-of-my-own-">Notable projects of my own 💖</h2>
-    <p><br></p>
-    <ol>
-    <li><p><a href="https://marketplace.visualstudio.com/items?itemName=VishwaR.mdsnippets"><strong>MDSnippets</strong></a> - <strong>MDSnippets</strong> is a Snippet autocomplete extension for VScode.Just give a try and I am planning to give a update for this.</p>
-    <p> <strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/MDsnippets">https://github.com/code-reaper08/MDsnippets</a>
-    <br>
-    <br></p>
-    </li>
-    <li><p><a href="https://packagecontrol.io/packages/MarkdownAssistant"><strong>MarkdownAssistant</strong></a> - <strong>MarkdownAssistant</strong> is a snippet autocomplete package for SublimeText-3, Which enables easy editing and creation of MarkDown files.</p>
-    <p><strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/MarkdownAssistant">https://github.com/code-reaper08/MarkdownAssistant</a>
-    <br>
-    <br></p>
-    </li>
-    <li><p><a href="https://www.npmjs.com/package/docgen-x"><strong>DocGen-X</strong></a> - <strong>docgen-x</strong> is a a node CLI tool, which helps in creating License files for projects with ease. It was made with lesser number of dependencies.</p>
-    <p><strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/docgen-x">https://github.com/code-reaper08/docgen-x</a>
-    <br>
-    <br></p>
-    </li>
-    <li><p><a href="https://pypi.org/project/PyBrainf-ck/"><strong>PyBrainf-ck</strong></a> - <strong>PyBrainf-ck</strong> is a simple package which gives the brainfuck code for the passed text. It&#39;s available in PyPi for download.</p>
-    <p> <strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/PyBrainf_ck">https://github.com/code-reaper08/PyBrainf_ck</a>
-    <br>
-    <br></p>
-    </li>
-    <li><p><a href="https://vishwa-r.itch.io/gameboy-adventures"><strong>GameBoy-Adventures</strong></a> - <strong>GameBoy-Adventures</strong> is a simple Platformer game built using Godot Engine.This is a simple retro styled platformer game fully built using Godot Engine.</p>
-    <p> <strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/GameBoy-Adventures">https://github.com/code-reaper08/GameBoy-Adventures</a></p>
-    </li>
-    
-    <p><br>
-    <!-- <br></p> -->
-    <li><p><a href="https://code-reaper08.github.io/Link-Master/"><strong>Link-Master</strong></a> - <strong>Link-Master</strong> is a Web-APP which finds all the Broken-URL&#39;s in your Project&#39;s README file.
-    It uses Cheerio for scraping the exact Readme file content and present you with status for each link either as &quot;Success&quot; or &quot;Failure&quot;.</p>
-    <p> <strong><em>repo link</em></strong> : <a href="https://github.com/code-reaper08/Link-Master">https://github.com/code-reaper08/Link-Master</a></p>
-    </li>
-    <p><br>
-    <br></p>
-</ol>
-  </div>
-</div>
+    <div style="position: relative">
+      <div
+        style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <p>
+          Scroll up and down to really get the feeling of how Parallax Scrolling
+          works.
+        </p>
+      </div>
+    </div>
 
-<div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
-
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">COOL!</span>
-  </div>
-</div>
-
-</body>
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">COOL!</span>
+      </div>
+    </div>
+  </body>
 </html>

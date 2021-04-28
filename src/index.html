@@ -9,7 +9,12 @@
     <!-- <script type="text/javascript" src="../ext/html2canvas.js"></script> -->
     <script src="../ext/dom-to-image.js"></script>
     <script src="../ext/FileSaver.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body id="body">
@@ -17,7 +22,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">GitHub-CARD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,10 +52,11 @@
       </div>
     </nav>
     <!-- nav ending -->
-    <div id="inpdiv" style="display: block;">
+    <div id="inpdiv" style="display: block">
       <input type="text" name="" id="text" />
       <button onclick="dta()" id="submit">
-        <lord-icon id="butimg"
+        <lord-icon
+          id="butimg"
           src="https://cdn.lordicon.com//xgeyogar.json"
           trigger="hover"
           colors="primary:#9cf4df,secondary:#9cf4df"
@@ -52,105 +66,114 @@
         </lord-icon>
       </button>
     </div>
-    <div id="con" style="display: block;">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem quas, deserunt blanditiis hic corporis obcaecati, nesciunt non culpa in iusto eius accusantium perferendis ut. Dolorum id architecto vitae quis?
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fuga praesentium laborum inventore, labore consequatur earum? Velit, obcaecati dolor magnam provident ipsam numquam officiis minus, minima eos veniam veritatis esse.
-     <br>
-     <br>
-     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ad repellendus deleniti veniam aspernatur mollitia obcaecati quaerat at doloremque necessitatibus, voluptates sapiente enim ut distinctio corrupti quisquam voluptatem expedita saepe.
+    <div id="con" style="display: block">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem quas,
+      deserunt blanditiis hic corporis obcaecati, nesciunt non culpa in iusto
+      eius accusantium perferendis ut. Dolorum id architecto vitae quis? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Animi fuga praesentium
+      laborum inventore, labore consequatur earum? Velit, obcaecati dolor magnam
+      provident ipsam numquam officiis minus, minima eos veniam veritatis esse.
+      <br />
+      <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ad
+      repellendus deleniti veniam aspernatur mollitia obcaecati quaerat at
+      doloremque necessitatibus, voluptates sapiente enim ut distinctio corrupti
+      quisquam voluptatem expedita saepe.
     </div>
     <!-- main div for download -->
-    <div id="ss" class="container max-width:1400px max-height:350px"> <!--screenshot div-->
-    <div id="maindiv" style="display: none;">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm"> <!--column 1-->
-            <div id="gravatardiv">
-              <!-- link to respective profile -->
-              <a id="profilelink">
-              <!-- profile picture -->
-              <img id="gravatar" src="" alt="" />
-              </a>
-            </div>
-            <div id="nameloc">
-            <!-- name -->
-            <div id="name"></div>
-            <!-- location -->
-            <div id="location"></div>
-          </div>
-          <!-- organistion data.... -->
-          <div id="orgs" class="container">
-            <p id="orgtitle"></p>
-          <!-- dynamic organisation images inserted here.... -->
-          </div>
-          </div>
-          <div class="col-sm"> <!--column 2-->
-          <!-- bio div -->
-          <div id="bio"></div>
-          <!-- progress bar -->
-          <section class="charts_orb">
-          <article class="orb">
-            <div class="orb_graphic">
-              <svg>
-                <circle class="fill"></circle>
-                <circle class="progress"></circle>
-              </svg>
-              <div id="numrepo" class="orb_value count"></div>
-            </div>
-            <div class="orb_label">
-              public repos
-            </div>
-          </article>
-          <article class="orb">
-            <div class="orb_graphic">
-              <svg>
-                <circle class="fill"></circle>
-                <circle class="progress"></circle>
-              </svg>
-              <div id="gists" class="orb_value count"></div>
-            </div>
-            <div class="orb_label">
-              public gists
-            </div>
-          </article>
-        </section>
-        <!-- star div.... -->
-        <div id="stardiv" class="container">
-          <!-- star info appear here -->
-          <p id="startitle"></p>
-          <!-- <p style="display: inline;"></p> -->
-        </div>
-          </div>
-          <div class="col-sm"> <!--column 3-->
-            <div id="langdiv" class="container">
-              <p id="langtitle"></p>
-              <div class="row">
-                <div class="col1"></div>
+    <div id="ss" class="container max-width:1400px max-height:350px">
+      <!--screenshot div-->
+      <div id="maindiv" style="display: none">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <!--column 1-->
+              <div id="gravatardiv">
+                <!-- link to respective profile -->
+                <a id="profilelink">
+                  <!-- profile picture -->
+                  <img id="gravatar" src="" alt="" />
+                </a>
               </div>
+              <div id="nameloc">
+                <!-- name -->
+                <div id="name"></div>
+                <!-- location -->
+                <div id="location"></div>
+              </div>
+              <!-- organistion data.... -->
+              <div id="orgs" class="container">
+                <p id="orgtitle"></p>
+                <!-- dynamic organisation images inserted here.... -->
+              </div>
+            </div>
+            <div class="col-sm">
+              <!--column 2-->
+              <!-- bio div -->
+              <div id="bio"></div>
+              <!-- progress bar -->
+              <section class="charts_orb">
+                <article class="orb">
+                  <div class="orb_graphic">
+                    <svg>
+                      <circle class="fill"></circle>
+                      <circle class="progress"></circle>
+                    </svg>
+                    <div id="numrepo" class="orb_value count"></div>
+                  </div>
+                  <div class="orb_label">public repos</div>
+                </article>
+                <article class="orb">
+                  <div class="orb_graphic">
+                    <svg>
+                      <circle class="fill"></circle>
+                      <circle class="progress"></circle>
+                    </svg>
+                    <div id="gists" class="orb_value count"></div>
+                  </div>
+                  <div class="orb_label">public gists</div>
+                </article>
+              </section>
+              <!-- star div.... -->
+              <div id="stardiv" class="container">
+                <!-- star info appear here -->
+                <p id="startitle"></p>
+                <!-- <p style="display: inline;"></p> -->
+              </div>
+            </div>
+            <div class="col-sm">
+              <!--column 3-->
+              <div id="langdiv" class="container">
+                <p id="langtitle"></p>
+                <div class="row">
+                  <div class="col1"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div> <!--ss div ending-->
+    <!--ss div ending-->
     <!-- button for taking screenshot -->
-    <br>
-    <br>
-    <br>
-    <div id="butdiv" style="display: none;">
-    <button id="ssbut" onclick="ss()">Download</button>
-    <!-- <button id="sharebut" onclick="share()">Share</button> -->
-    <button id="theme">Themes</button>
+    <br />
+    <br />
+    <br />
+    <div id="butdiv" style="display: none">
+      <button id="ssbut" onclick="ss()">Download</button>
+      <!-- <button id="sharebut" onclick="share()">Share</button> -->
+      <button id="theme">Themes</button>
     </div>
-    
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
     <script src="../ext/counter.js"></script>
     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
     <script src="index.js"></script>
     <!-- <script src="../node_modules/file-saver/dist/FileSaver.min.js"></script> -->
-    
-    
   </body>
 </html>
