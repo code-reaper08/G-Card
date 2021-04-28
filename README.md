@@ -21,3 +21,4 @@ On progress .......
 + ~~Made the `theme` button to iterate through 4 different themes.~~
 + added mobile compatibility.
 + made 3 complete themes (removed the fourth theme due to incomplete work)
++ added transition on recursion.
