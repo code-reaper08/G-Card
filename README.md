@@ -22,3 +22,9 @@ On progress .......
 + added mobile compatibility.
 + made 3 complete themes (removed the fourth theme due to incomplete work)
 + added transition on recursion.
+
+## Phase 5 ....
++ ~~Added About me page.~~
++ ~~Added parallax effect.~~
++ ~~Added info regarding me.~~
++ Need to add contact links.
