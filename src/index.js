@@ -268,6 +268,7 @@ async function dta() {
 // Theme toggler mechanism....
 let themetoggler = 0;
 document.getElementById("theme").onclick = function themetoggle () {
+  element.style.transition = "ease 2s"
   themetoggler++;
   if (themetoggler == 1) {
     document.getElementById("theme").innerText = "bullseye" // changes inner text of the button....
