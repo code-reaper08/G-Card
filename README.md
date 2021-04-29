@@ -27,4 +27,4 @@ On progress .......
 + ~~Added About me page.~~
 + ~~Added parallax effect.~~
 + ~~Added info regarding me.~~
-+ Need to add contact links.
++ ~~Need to add contact links.~~
