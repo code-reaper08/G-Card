@@ -319,3 +319,8 @@ hr {
   border-radius: 30px;
   transition:ease 1s;
 }
+#footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
