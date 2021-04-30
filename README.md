@@ -28,3 +28,5 @@ On progress .......
 + ~~Added parallax effect.~~
 + ~~Added info regarding me.~~
 + ~~Need to add contact links.~~
++ Need to make a `GO back` button.
++ ~~Added title for contact me on github section.~~
