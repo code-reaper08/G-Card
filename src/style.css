@@ -324,3 +324,11 @@ hr {
   bottom: 0;
   text-align: center;
 }
+
+.explanation-title {
+    width: 100%;
+    text-align: center;
+}
+.explanation-para {
+    font-size: 1.8em;
+}
