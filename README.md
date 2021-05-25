@@ -35,4 +35,4 @@ On progress .......
 + ~~Added favicon and logo.~~
 + ~~website deployed with minor bug.~~
 + ~~Img bugs in homepage fixed~~
-+ Img bug in support page needs to be fixed.
++ ~~Img bug in support page needs to be fixed.~~
