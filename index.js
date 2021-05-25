@@ -180,7 +180,7 @@ async function dta() {
     console.log(totalstars);
     let staricon = document.createElement("img");
     staricon.src =
-      "https://github.com/code-reaper08/G-Card/blob/website/img/star.png?raw=true";
+      "./img/star.png";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
     stardiv.appendChild(stariconcontainerdiv);
