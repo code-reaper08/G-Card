@@ -30,3 +30,9 @@ On progress .......
 + ~~Need to add contact links.~~
 + ~~Need to make a `GO back` button.~~
 + ~~Added title for contact me on github section.~~
+
+## Phase 6 ....
++ ~~Added favicon and logo.~~
++ ~~website deployed with minor bug.~~
++ ~~Img bugs in homepage fixed~~
++ Img bug in support page needs to be fixed.
