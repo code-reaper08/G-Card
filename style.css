@@ -50,7 +50,7 @@ body {
 }
 #maindiv {
   background-color: #000000;
-  background-image: url("../img/Cornered-Stairs.png"); /* local url */
+  background-image: url("./Cornered-Stairs.png"); /* local url */
   background-attachment: fixed;
   background-size: cover;
   display: none;

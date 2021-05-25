@@ -180,7 +180,7 @@ async function dta() {
     console.log(totalstars);
     let staricon = document.createElement("img");
     staricon.src =
-      "./img/star.png";
+      "./star.png";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
     stardiv.appendChild(stariconcontainerdiv);
@@ -300,18 +300,18 @@ document.getElementById("theme").onclick = function themetoggle () {
 
 // all theme changing functions....
 function theme1() {
-  element.style.backgroundImage = "url('../img/Bullseye-Gradient.png')";
+  element.style.backgroundImage = "url('./Bullseye-Gradient.png')";
   // document.body.style.backgroundImage = "url('img_tree.png')";
   element.style.transition = "ease 2s"
 
 }
 function theme2(){
-  element.style.backgroundImage = "url('../img/Protruding-Squares.png')";
+  element.style.backgroundImage = "url('./Protruding-Squares.png')";
   element.style.transition = "ease 2s"
 
 }
 function theme3(){
-  element.style.backgroundImage = "url('../img/Geometric-Intersection.png')";
+  element.style.backgroundImage = "url('./Geometric-Intersection.png')";
   element.style.transition = "ease 2s"
 }
 function theme4(){
