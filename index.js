@@ -180,7 +180,7 @@ async function dta() {
     console.log(totalstars);
     let staricon = document.createElement("img");
     staricon.src =
-      "../img/star.png";
+      "./img/star.png";
     staricon.alt = "Total stars";
     staricon.className = "staricon";
     stardiv.appendChild(stariconcontainerdiv);
