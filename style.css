@@ -332,3 +332,111 @@ hr {
 .explanation-para {
     font-size: 1.8em;
 }
+/* .box--4 .btn {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  bottom: -45px;
+  right: -45px;
+  background-color: rgb(173, 221, 0);
+}
+.box--4 .box_rotate {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box--4 .box_rotate:before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  box-sizing: border-box;
+  border: 30px solid var(--color);
+}
+.box--4 svg {
+  width: 494px;
+  height: auto;
+  position: absolute;
+  bottom: -242px;
+  right: -244px;
+  -moz-animation: rotate 8s linear infinite;
+  -webkit-animation: rotate 8s linear infinite;
+  animation: rotate 8s linear infinite;
+}
+.box--4 text {
+  font-size: 10px;
+  letter-spacing: 1.15px;
+  font-weight: bold;
+  color: #ff9c08;
+}
+
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1150px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+
+  .box {
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 0 15px;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+
+  .box {
+    height: 200px;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto;
+  }
+} */
