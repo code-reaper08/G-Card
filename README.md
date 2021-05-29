@@ -1,38 +1,33 @@
-# dev
-On progress .......
+# G-Card
 
+## Want to show your awesomeness in GitHub , creatively and in a visual manner ?
+## Well ! G-Card is for you.
 
-## Phase 1 completed 
+### All you have to do is type your GitHub username in the search-box and wait till we prepare a nice and fit image for you to download.
 
-## Phase 2 completed
-+ ~~added the fundamental functional parts of code for efficient working.~~
-+ added folder structure.
-+ added clickable links (**new**).
+## How to use :
 
-## Phase 3 ....
-+ ~~initiated npm and html2canvas was added as a dependency.~~
-+ ~~download and share options are worked on.~~
-+ ~~Make Avatar url and organisations images png to get a nice screenshot.~~
-+ ~~Make a shareable link for sharing the website.~~
+1. To get a full fledged flawless experience , we recommend you to use **Desktop/laptop** to visit our website **[https://code-reaper08.github.io/G-Card/](https://code-reaper08.github.io/G-Card/)**
 
-## Phase 4 ....
-+ ~~Added a theme functionality ( toggler)~~
-+ ~~Made 4 different themes.~~
-+ ~~Made the `theme` button to iterate through 4 different themes.~~
-+ added mobile compatibility.
-+ made 3 complete themes (removed the fourth theme due to incomplete work)
-+ added transition on recursion.
+![website image](Image link "Hover Text")
 
-## Phase 5 ....
-+ ~~Added About me page.~~
-+ ~~Added parallax effect.~~
-+ ~~Added info regarding me.~~
-+ ~~Need to add contact links.~~
-+ ~~Need to make a `GO back` button.~~
-+ ~~Added title for contact me on github section.~~
+2. Type your username in the **search-box** and press the button next to it.
 
-## Phase 6 ....
-+ ~~Added favicon and logo.~~
-+ ~~website deployed with minor bug.~~
-+ ~~Img bugs in homepage fixed~~
-+ ~~Img bug in support page needs to be fixed.~~
+![with name](Image link "Hover Text")
+
+3. WAIT !!!!!
+
+4. You get a nicely designed card with all the perks you've acheived in GitHub.
+
+5. Change the color theme using the `theme` button below.
+
+6. If Satisfied , press the `download` button to download the card as `"your_username.png"`.
+
+## How to Contribute :
+__**G-Card is a OpenSource project , so contributions of any kind are welcomed.**__
+Head over to [CONTRIBUTING.md](Link) to know more.
+
+## Rules to follow :
+We urge you to follow and abide the rules and regulations , mentioned in the [CODE_OF_CONDUCT.md](Link), while contributing to the project.
+
+## Star the project , if you like it.
