@@ -29,7 +29,7 @@
 
 ## How to Contribute :
 __**G-Card is a OpenSource project , so contributions of any kind are welcomed.**__
-Head over to [CONTRIBUTING.md](Link) to know more.
+Head over to [CONTRIBUTING.md](https://github.com/code-reaper08/G-Card/blob/website/CONTRIBUTING.md) to know more.
 
 ## Rules to follow :
 We urge you to follow and abide the rules and regulations , mentioned in the [CODE_OF_CONDUCT.md](Link), while contributing to the project.
